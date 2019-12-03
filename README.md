@@ -1,24 +1,40 @@
-# README
+# Ruby On Rails Micro Reddit
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple aplication who have an association and validation of 3 tables (User, Post and Comments).
 
-Things you may want to cover:
+### Clone the project with this command!
 
-* Ruby version
+     $ https://github.com/JuanPabloGil/Micro_Reddit.git
 
-* System dependencies
+### Download the project files with this link
+  
+      https://github.com/JuanPabloGil/Micro_Reddit/archive/dev.zip
 
-* Configuration
+## Deployment instructions 
 
-* Database creation
+Before run the app please make sure you have ruby installed, (preferent version of ruby v2.6.4) and rails on his version 5.2.1.
 
-* Database initialization
+To open the console run this command on the root files:
 
-* How to run the test suite
+     $ rails console
+     
+You can create a new User with the command
 
-* Services (job queues, cache servers, search engines, etc.)
+     User.create(name:"your name", email: "your@email.com")
+      
+You can create a new Post with the command 
+        
+     Post.create(title:"Your Title", content: "Your content", user_id: id of user) <----- user id must be integer
+  
+You can create a new Comment with the command 
+        
+    Comment.create(content:"Your content", post_id: id of post, user_id: id of user) <----- user and post id  must be integer
+        
 
-* Deployment instructions
+## Collaborators
 
-* ...
+Flover Herrera
+
+Juan Pablo Gil
+
+[Original Project Spsifications](https://www.theodinproject.com/courses/ruby-on-rails/lessons/building-with-active-record-ruby-on-rails#project-2-micro-reddit)
